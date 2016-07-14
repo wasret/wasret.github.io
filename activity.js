@@ -16,6 +16,15 @@ $(document).ready(function() {
  
  $("#bed").fadeIn();
 
+  $(document).ready(function(){
+    $("#text").hover(function(){
+    $("#text").animate({fontSize: "20px"});
+},
+    function(){
+        $("#text").stop().animate({fontSize:"12px"});
+    });
+});
+
 
 
  $("#dead").mouseenter(function(){
