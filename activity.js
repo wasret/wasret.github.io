@@ -11,7 +11,7 @@ $(document).ready(function() {
  $("#bed").fadeOut();
 
  setTimeout(function(){
-    $("#bed").text("NOW THE MOTHERFUCKERS DEAD");
+    $("#bed").text("NOW THE MOTHER FUCKERS DEAD");
  }, 10000);
  
  $("#bed").fadeIn();
