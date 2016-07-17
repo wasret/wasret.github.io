@@ -38,7 +38,7 @@ $(document).ready(function() {
  $("#oldman").click(function(){
         if($(this).is(":checked"))
         {
-            $("#smiley").text("8^)");
+            $("#smiley").text("WRONG (uncheck and refresh!)");
         }else{
             var i = 1;
 
