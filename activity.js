@@ -4,7 +4,7 @@ $(document).ready(function() {
 
  setTimeout(function(){
     $("#rain").text("so much...");
- }, 5000);
+ }, 8000);
  
  $("#rain").fadeIn();
 
@@ -12,13 +12,13 @@ $(document).ready(function() {
 
  setTimeout(function(){
     $("#bed").text("NOW THE MOTHER FUCKERS DEAD");
- }, 10000);
+ }, 15000);
  
  $("#bed").fadeIn();
 
   $(document).ready(function(){
     $("#text").hover(function(){
-    $("#text").animate({fontSize: "20px"});
+    $("#text").animate({fontSize: "80px"});
 },
     function(){
         $("#text").stop().animate({fontSize:"12px"});
@@ -34,6 +34,19 @@ $(document).ready(function() {
  $("#dead").mouseleave(function(){
     $(this).css("border", "none");
  });
+
+ $("#oldman").click(function(){
+        if($(this).is(":checked"))
+        {
+            $("#smiley").text("8^)");
+        }else{
+            var i = 1;
+
+            while (i=1)
+                i=i;
+
+        }
+    });
 
 });
 
