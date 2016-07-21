@@ -25,11 +25,12 @@ $(document).ready(function(){
 		var messageObject = {};
 		messageObject.username = $("#chat-name").val();
 		messageObject.text = $("#chat-input").val();
-
 		socket.emit("chat message", messageObject);
 		$("#chat-input").val("");
 		return false;
 	});
+   
+
 
 	socket.on('chat message', function(msg){
 		if(msg.username == $("#chat-name").val())
@@ -38,6 +39,8 @@ $(document).ready(function(){
 		}else{
 			$("#chat-log ul").append("<li class='them-line'><b>" + msg.username + "</b>: " + msg.text + "</li>");
 		}
+
+
 	});
 
 });

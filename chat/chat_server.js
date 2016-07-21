@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-
+var reverse = require("reverse-string");
 var chatArchive = [];
 
 app.use(function(req, res, next) {
@@ -18,7 +18,10 @@ app.get('/', function (req, res) {
 
 io.on('connection', function(socket){
 	console.log("New Client Connection");
+
+
 	socket.on("chat message", function(msg){
+		msg.text = reverse(msg.text)
 		chatArchive.push(msg);
 		io.emit('chat message',msg);
 	});

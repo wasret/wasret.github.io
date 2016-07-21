@@ -2,18 +2,19 @@ body
 {
 	font: 13px;
 	font-family: Helvetica, Arial, sans-serif;
-	background-color: red;
+	background-color: crimson;
+
 }
 
 #chat-log
 {
-	background-color: #FFF;
+	background-color: khaki;
 	margin: 5px;
 	border: solid 1px #000;
 	position: fixed;
 	top: 30px;
 	bottom: 90px;
-	width: 100%;
+	width: 90%;
 	overflow-y: scroll;
 }
 
@@ -31,8 +32,18 @@ body
 
 #chat-log ul li.them-line
 {
-	background-color: yellow;
+	list-style-image: url(http://i.imgur.com/hfZm5.gif);
+	background-color: coral;
+	color: cornflowerblue;
+	font-size: 50px;
 }
+
+#chat-log ul li.me-line
+{
+	background-color: cornflowerblue;
+	color: coral;
+}
+
 
 form
 {
@@ -47,7 +58,7 @@ form
 
 form #chat-input
 {
-	border: none;
+	border: 5px;
 	padding: 10px;
 	width: 85%;
 	margin-right: .5%;
@@ -56,10 +67,13 @@ form #chat-input
 form button
 {
 	width: 12%;
-	background-color: #55FF33;
+	background-color: lightskyblue;
 	border: none;
 	padding: 10px;
 }.console-line {
   font-family: monospace;
   margin: 2px;
 }
+
+
+
