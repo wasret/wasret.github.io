@@ -8,7 +8,7 @@ body
 
 #chat-log
 {
-	background-color: khaki;
+	background-color: aquamarine;
 	margin: 5px;
 	border: solid 1px #000;
 	position: fixed;
@@ -32,7 +32,7 @@ body
 
 #chat-log ul li.them-line
 {
-	list-style-image: url(http://i.imgur.com/hfZm5.gif);
+	
 	background-color: coral;
 	color: cornflowerblue;
 	font-size: 50px;

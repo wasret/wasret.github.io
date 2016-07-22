@@ -4,6 +4,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var reverse = require("reverse-string");
 var chatArchive = [];
+var say = require('say');
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -24,6 +25,7 @@ io.on('connection', function(socket){
 		msg.text = reverse(msg.text)
 		chatArchive.push(msg);
 		io.emit('chat message',msg);
+		msg.text = say.speak(msg.text)
 	});
 });
 
